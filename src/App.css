@@ -1,0 +1,11 @@
+/* O elemento pai de todas as páginas (geralmente a div com className="App") */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Força o site a ter, no mínimo, a altura total da tela */
+}
+
+/* O container que envelopa as suas páginas no meio (entre a Navbar e o Footer) */
+.container {
+  flex: 1; /* Faz esta parte do meio crescer e ocupar todo o espaço restante, empurrando o footer para o fundo */
+}

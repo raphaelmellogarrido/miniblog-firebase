@@ -1,0 +1,81 @@
+.home_container {
+  max-width: 800px; /* Largura ideal para leitura de um feed de blog */
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.home_container h1 {
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.home_container > p {
+  color: #666666;
+  margin-bottom: 2.5rem;
+}
+
+/* Container que segura os cards */
+.posts_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Espaçamento entre um post e outro */
+}
+
+/* Estilização individual de cada card de post */
+.post_card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden; /* Garante que a imagem respeite as bordas arredondadas do card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* Em telas menores fica em coluna, se quiser pode mudar para row em telas grandes */
+}
+
+/* Controla o tamanho e proporção da imagem do post de forma profissional */
+.post_image {
+  padding-top: 20px;
+  width: 100%;
+  height: 300px;
+  object-fit: contain; /* <--- Mude de 'cover' para 'contain' */
+  /* background-color: #f0f0f0;  */
+}
+
+/* Espaçamento interno dos textos do post */
+.post_content {
+  padding: 1.5rem;
+}
+
+.post_content h2 {
+  margin: 0 0 0.5rem 0;
+  color: #1a1a1a;
+  font-size: 1.6rem;
+}
+
+/* Estilo discreto para mostrar quem escreveu o post */
+.post_author {
+  font-size: 0.85rem;
+  color: #888888;
+  margin-bottom: 1rem;
+}
+
+.post_author span {
+  font-weight: 600;
+  color: #555555;
+}
+
+.post_text {
+  color: #444444;
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhorar a legibilidade */
+}
+
+/* Estilização para o estado de sem posts */
+.no_posts {
+  padding: 3rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #cccccc;
+  color: #666666;
+}

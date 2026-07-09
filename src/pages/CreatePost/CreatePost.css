@@ -1,0 +1,67 @@
+.create_post_container {
+  max-width: 600px; /* Um pouco mais largo que o login para acomodar o textarea */
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.create_post_container h2 {
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.create_post_container p {
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+
+.create_post_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+}
+
+.create_post_container label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.create_post_container label span {
+  font-weight: 600;
+  color: #444444;
+  font-size: 0.9rem;
+}
+
+/* Estiliza tanto o input comum quanto o textarea */
+.create_post_container input[type="text"],
+.create_post_container textarea {
+  padding: 0.75rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+/* Estilização específica do campo de texto longo */
+.create_post_container textarea {
+  min-height: 120px;
+  resize: vertical; /* Permite ao usuário esticar o campo apenas verticalmente, sem quebrar o layout */
+}
+
+.create_post_container input:focus,
+.create_post_container textarea:focus {
+  border-color: #007bff;
+}
+
+/* Estilo discreto para o input de arquivo */
+.create_post_container input[type="file"] {
+  font-size: 0.9rem;
+  color: #555555;
+}

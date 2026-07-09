@@ -1,0 +1,96 @@
+/* Segue o mesmo padrão visual do formulário de registro para manter a consistência da UI */
+.login_container {
+  max-width: 500px;
+  margin: 4rem auto; /* Um pouco mais de margem no topo por ter menos campos */
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.login_container h2 {
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.login_container p {
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+
+.login_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+}
+
+.login_container label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.login_container label span {
+  font-weight: 600;
+  color: #444444;
+  font-size: 0.9rem;
+}
+
+.login_container input {
+  padding: 0.75rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login_container input:focus {
+  border-color: #007bff;
+}
+
+/* Container que segura os dois botões */
+.login_actions_container {
+  display: flex;
+  gap: 1rem; /* Espaço exato de separação entre os dois botões */
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Regra geral para os dois botões dentro do formulário */
+.login_actions_container .btn {
+  flex: 1; /* Força ambos a terem exatamente a mesma largura (metade da caixa cada um) */
+  padding: 0.8rem;
+  margin-top: -15px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; /* Remove o sublinhado do Link de registo */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Estilo do botão principal de Login (Azul) */
+.btn_login {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn_login:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo do botão secundário de Register (Cinza ou Transparente com Borda) */
+.btn_register {
+  background-color: #f8f9fa;
+  color: #333333;
+  border: 1px solid #cccccc;
+}
+
+.btn_register:hover {
+  background-color: #e2e6ea;
+  border-color: #b8daff;
+}
