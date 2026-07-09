@@ -6,12 +6,12 @@ import { getStorage } from "firebase/storage";
 
 // Objeto contendo as chaves de configuração do seu projeto Firebase (Substitua pelos seus dados do console)
 const firebaseConfig = {
-  apiKey: "AIzaSyBjSLQeKO-2cukHmSSRLsoM2AfL0qoA9gQ",
-  authDomain: "miniblog-rapha.firebaseapp.com",
-  projectId: "miniblog-rapha",
-  storageBucket: "miniblog-rapha.appspot.com", // <--- ALTERADO AQUI!
-  messagingSenderId: "791398996253",
-  appId: "1:791398996253:web:1deea44da15b5effb4a9f4",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Inicializa o Firebase passando as configurações do seu projeto para a função da biblioteca
